@@ -1,0 +1,887 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BDFB172296E2EF700A98698 /* Swagger_code_genApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDFB171296E2EF700A98698 /* Swagger_code_genApp.swift */; };
+		0BDFB174296E2EF700A98698 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDFB173296E2EF700A98698 /* ContentView.swift */; };
+		0BDFB176296E2EFA00A98698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BDFB175296E2EFA00A98698 /* Assets.xcassets */; };
+		0BDFB17A296E2EFA00A98698 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BDFB179296E2EFA00A98698 /* Preview Assets.xcassets */; };
+		0BDFB184296E2EFB00A98698 /* Swagger_code_genTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDFB183296E2EFB00A98698 /* Swagger_code_genTests.swift */; };
+		0BDFB18E296E2EFB00A98698 /* Swagger_code_genUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDFB18D296E2EFB00A98698 /* Swagger_code_genUITests.swift */; };
+		0BDFB190296E2EFB00A98698 /* Swagger_code_genUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDFB18F296E2EFB00A98698 /* Swagger_code_genUITestsLaunchTests.swift */; };
+		0BDFB1C62971FF6800A98698 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0BDFB1C52971FF6800A98698 /* Alamofire */; };
+		0BE5C50829741860009FF98E /* .swagger-codegen-ignore in Resources */ = {isa = PBXBuildFile; fileRef = 0BE5C4DF29741860009FF98E /* .swagger-codegen-ignore */; };
+		0BE5C50929741860009FF98E /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 0BE5C4E029741860009FF98E /* Cartfile */; };
+		0BE5C50A29741860009FF98E /* SwaggerClient.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0BE5C4E129741860009FF98E /* SwaggerClient.podspec */; };
+		0BE5C50B29741860009FF98E /* git_push.sh in Resources */ = {isa = PBXBuildFile; fileRef = 0BE5C4E229741860009FF98E /* git_push.sh */; };
+		0BE5C50C29741860009FF98E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0BE5C4E329741860009FF98E /* .gitignore */; };
+		0BE5C50D29741860009FF98E /* VERSION in Resources */ = {isa = PBXBuildFile; fileRef = 0BE5C4E529741860009FF98E /* VERSION */; };
+		0BE5C50E29741860009FF98E /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5C4E929741860009FF98E /* APIHelper.swift */; };
+		0BE5C50F29741860009FF98E /* AlamofireImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5C4EA29741860009FF98E /* AlamofireImplementations.swift */; };
+		0BE5C51029741860009FF98E /* JSONValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5C4EB29741860009FF98E /* JSONValue.swift */; };
+		0BE5C51129741860009FF98E /* EnvironmentAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5C4ED29741860009FF98E /* EnvironmentAPI.swift */; };
+		0BE5C51229741860009FF98E /* ZonesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5C4EE29741860009FF98E /* ZonesAPI.swift */; };
+		0BE5C51329741860009FF98E /* ZWaveAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5C4EF29741860009FF98E /* ZWaveAPI.swift */; };
+		0BE5C51429741860009FF98E /* DeviceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5C4F029741860009FF98E /* DeviceAPI.swift */; };
+		0BE5C51529741860009FF98E /* CodableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5C4F129741860009FF98E /* CodableHelper.swift */; };
+		0BE5C51629741860009FF98E /* JSONEncodableEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5C4F229741860009FF98E /* JSONEncodableEncoding.swift */; };
+		0BE5C51729741860009FF98E /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5C4F329741860009FF98E /* APIs.swift */; };
+		0BE5C51829741860009FF98E /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5C4F529741860009FF98E /* Forecast.swift */; };
+		0BE5C51929741860009FF98E /* TemperatureZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5C4F629741860009FF98E /* TemperatureZone.swift */; };
+		0BE5C51A29741860009FF98E /* DeviceState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5C4F729741860009FF98E /* DeviceState.swift */; };
+		0BE5C51B29741860009FF98E /* TemperatureSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5C4F829741860009FF98E /* TemperatureSummary.swift */; };
+		0BE5C51C29741860009FF98E /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5C4F929741860009FF98E /* City.swift */; };
+		0BE5C51D29741860009FF98E /* LightingZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5C4FA29741860009FF98E /* LightingZone.swift */; };
+		0BE5C51E29741860009FF98E /* HeaterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5C4FB29741860009FF98E /* HeaterState.swift */; };
+		0BE5C51F29741860009FF98E /* ForecastTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5C4FC29741860009FF98E /* ForecastTemperature.swift */; };
+		0BE5C52029741860009FF98E /* ForecastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5C4FD29741860009FF98E /* ForecastResponse.swift */; };
+		0BE5C52129741860009FF98E /* LightingSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5C4FE29741860009FF98E /* LightingSummary.swift */; };
+		0BE5C52229741860009FF98E /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5C4FF29741860009FF98E /* ApiResponse.swift */; };
+		0BE5C52329741860009FF98E /* TemperatueZoneStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5C50029741860009FF98E /* TemperatueZoneStatus.swift */; };
+		0BE5C52429741860009FF98E /* DeviceRegistrationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5C50129741860009FF98E /* DeviceRegistrationInfo.swift */; };
+		0BE5C52529741860009FF98E /* WeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5C50229741860009FF98E /* WeatherForecast.swift */; };
+		0BE5C52629741860009FF98E /* LightingZoneStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5C50329741860009FF98E /* LightingZoneStatus.swift */; };
+		0BE5C52729741860009FF98E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5C50429741860009FF98E /* Extensions.swift */; };
+		0BE5C52829741860009FF98E /* JSONEncodingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5C50529741860009FF98E /* JSONEncodingHelper.swift */; };
+		0BE5C52929741860009FF98E /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5C50629741860009FF98E /* Models.swift */; };
+		0BE5C52A29741860009FF98E /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5C50729741860009FF98E /* Configuration.swift */; };
+		0BE5C56429756CA8009FF98E /* PS_FrameworkDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE5C56329756CA8009FF98E /* PS_FrameworkDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0BDFB180296E2EFB00A98698 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BDFB166296E2EF700A98698 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BDFB16D296E2EF700A98698;
+			remoteInfo = "Swagger-code-gen";
+		};
+		0BDFB18A296E2EFB00A98698 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BDFB166296E2EF700A98698 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BDFB16D296E2EF700A98698;
+			remoteInfo = "Swagger-code-gen";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0BE5C56029756A28009FF98E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0BDFB16E296E2EF700A98698 /* Swagger-code-gen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swagger-code-gen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BDFB171296E2EF700A98698 /* Swagger_code_genApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swagger_code_genApp.swift; sourceTree = "<group>"; };
+		0BDFB173296E2EF700A98698 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0BDFB175296E2EFA00A98698 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0BDFB177296E2EFA00A98698 /* Swagger_code_gen.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Swagger_code_gen.entitlements; sourceTree = "<group>"; };
+		0BDFB179296E2EFA00A98698 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0BDFB17F296E2EFB00A98698 /* Swagger-code-genTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swagger-code-genTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BDFB183296E2EFB00A98698 /* Swagger_code_genTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swagger_code_genTests.swift; sourceTree = "<group>"; };
+		0BDFB189296E2EFB00A98698 /* Swagger-code-genUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swagger-code-genUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BDFB18D296E2EFB00A98698 /* Swagger_code_genUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swagger_code_genUITests.swift; sourceTree = "<group>"; };
+		0BDFB18F296E2EFB00A98698 /* Swagger_code_genUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swagger_code_genUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0BE5C4DF29741860009FF98E /* .swagger-codegen-ignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".swagger-codegen-ignore"; sourceTree = "<group>"; };
+		0BE5C4E029741860009FF98E /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		0BE5C4E129741860009FF98E /* SwaggerClient.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SwaggerClient.podspec; sourceTree = "<group>"; };
+		0BE5C4E229741860009FF98E /* git_push.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = git_push.sh; sourceTree = "<group>"; };
+		0BE5C4E329741860009FF98E /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		0BE5C4E529741860009FF98E /* VERSION */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VERSION; sourceTree = "<group>"; };
+		0BE5C4E929741860009FF98E /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		0BE5C4EA29741860009FF98E /* AlamofireImplementations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireImplementations.swift; sourceTree = "<group>"; };
+		0BE5C4EB29741860009FF98E /* JSONValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONValue.swift; sourceTree = "<group>"; };
+		0BE5C4ED29741860009FF98E /* EnvironmentAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentAPI.swift; sourceTree = "<group>"; };
+		0BE5C4EE29741860009FF98E /* ZonesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZonesAPI.swift; sourceTree = "<group>"; };
+		0BE5C4EF29741860009FF98E /* ZWaveAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZWaveAPI.swift; sourceTree = "<group>"; };
+		0BE5C4F029741860009FF98E /* DeviceAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceAPI.swift; sourceTree = "<group>"; };
+		0BE5C4F129741860009FF98E /* CodableHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodableHelper.swift; sourceTree = "<group>"; };
+		0BE5C4F229741860009FF98E /* JSONEncodableEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncodableEncoding.swift; sourceTree = "<group>"; };
+		0BE5C4F329741860009FF98E /* APIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
+		0BE5C4F529741860009FF98E /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		0BE5C4F629741860009FF98E /* TemperatureZone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureZone.swift; sourceTree = "<group>"; };
+		0BE5C4F729741860009FF98E /* DeviceState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceState.swift; sourceTree = "<group>"; };
+		0BE5C4F829741860009FF98E /* TemperatureSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureSummary.swift; sourceTree = "<group>"; };
+		0BE5C4F929741860009FF98E /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		0BE5C4FA29741860009FF98E /* LightingZone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightingZone.swift; sourceTree = "<group>"; };
+		0BE5C4FB29741860009FF98E /* HeaterState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaterState.swift; sourceTree = "<group>"; };
+		0BE5C4FC29741860009FF98E /* ForecastTemperature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastTemperature.swift; sourceTree = "<group>"; };
+		0BE5C4FD29741860009FF98E /* ForecastResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastResponse.swift; sourceTree = "<group>"; };
+		0BE5C4FE29741860009FF98E /* LightingSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightingSummary.swift; sourceTree = "<group>"; };
+		0BE5C4FF29741860009FF98E /* ApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		0BE5C50029741860009FF98E /* TemperatueZoneStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatueZoneStatus.swift; sourceTree = "<group>"; };
+		0BE5C50129741860009FF98E /* DeviceRegistrationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceRegistrationInfo.swift; sourceTree = "<group>"; };
+		0BE5C50229741860009FF98E /* WeatherForecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherForecast.swift; sourceTree = "<group>"; };
+		0BE5C50329741860009FF98E /* LightingZoneStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightingZoneStatus.swift; sourceTree = "<group>"; };
+		0BE5C50429741860009FF98E /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0BE5C50529741860009FF98E /* JSONEncodingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncodingHelper.swift; sourceTree = "<group>"; };
+		0BE5C50629741860009FF98E /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		0BE5C50729741860009FF98E /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		0BE5C56329756CA8009FF98E /* PS_FrameworkDemo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PS_FrameworkDemo.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0BDFB16B296E2EF700A98698 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BDFB1C62971FF6800A98698 /* Alamofire in Frameworks */,
+				0BE5C56429756CA8009FF98E /* PS_FrameworkDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BDFB17C296E2EFB00A98698 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BDFB186296E2EFB00A98698 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BDFB165296E2EF700A98698 = {
+			isa = PBXGroup;
+			children = (
+				0BE5C56329756CA8009FF98E /* PS_FrameworkDemo.framework */,
+				0BE5C4DE29741860009FF98E /* SwiftClient2 */,
+				0BDFB170296E2EF700A98698 /* Swagger-code-gen */,
+				0BDFB182296E2EFB00A98698 /* Swagger-code-genTests */,
+				0BDFB18C296E2EFB00A98698 /* Swagger-code-genUITests */,
+				0BDFB16F296E2EF700A98698 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0BDFB16F296E2EF700A98698 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0BDFB16E296E2EF700A98698 /* Swagger-code-gen.app */,
+				0BDFB17F296E2EFB00A98698 /* Swagger-code-genTests.xctest */,
+				0BDFB189296E2EFB00A98698 /* Swagger-code-genUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0BDFB170296E2EF700A98698 /* Swagger-code-gen */ = {
+			isa = PBXGroup;
+			children = (
+				0BDFB171296E2EF700A98698 /* Swagger_code_genApp.swift */,
+				0BDFB173296E2EF700A98698 /* ContentView.swift */,
+				0BDFB175296E2EFA00A98698 /* Assets.xcassets */,
+				0BDFB177296E2EFA00A98698 /* Swagger_code_gen.entitlements */,
+				0BDFB178296E2EFA00A98698 /* Preview Content */,
+			);
+			path = "Swagger-code-gen";
+			sourceTree = "<group>";
+		};
+		0BDFB178296E2EFA00A98698 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0BDFB179296E2EFA00A98698 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0BDFB182296E2EFB00A98698 /* Swagger-code-genTests */ = {
+			isa = PBXGroup;
+			children = (
+				0BDFB183296E2EFB00A98698 /* Swagger_code_genTests.swift */,
+			);
+			path = "Swagger-code-genTests";
+			sourceTree = "<group>";
+		};
+		0BDFB18C296E2EFB00A98698 /* Swagger-code-genUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0BDFB18D296E2EFB00A98698 /* Swagger_code_genUITests.swift */,
+				0BDFB18F296E2EFB00A98698 /* Swagger_code_genUITestsLaunchTests.swift */,
+			);
+			path = "Swagger-code-genUITests";
+			sourceTree = "<group>";
+		};
+		0BE5C4DE29741860009FF98E /* SwiftClient2 */ = {
+			isa = PBXGroup;
+			children = (
+				0BE5C4DF29741860009FF98E /* .swagger-codegen-ignore */,
+				0BE5C4E029741860009FF98E /* Cartfile */,
+				0BE5C4E129741860009FF98E /* SwaggerClient.podspec */,
+				0BE5C4E229741860009FF98E /* git_push.sh */,
+				0BE5C4E329741860009FF98E /* .gitignore */,
+				0BE5C4E429741860009FF98E /* .swagger-codegen */,
+				0BE5C4E629741860009FF98E /* SwaggerClient */,
+			);
+			path = SwiftClient2;
+			sourceTree = "<group>";
+		};
+		0BE5C4E429741860009FF98E /* .swagger-codegen */ = {
+			isa = PBXGroup;
+			children = (
+				0BE5C4E529741860009FF98E /* VERSION */,
+			);
+			path = ".swagger-codegen";
+			sourceTree = "<group>";
+		};
+		0BE5C4E629741860009FF98E /* SwaggerClient */ = {
+			isa = PBXGroup;
+			children = (
+				0BE5C4E729741860009FF98E /* Classes */,
+			);
+			path = SwaggerClient;
+			sourceTree = "<group>";
+		};
+		0BE5C4E729741860009FF98E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0BE5C4E829741860009FF98E /* Swaggers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0BE5C4E829741860009FF98E /* Swaggers */ = {
+			isa = PBXGroup;
+			children = (
+				0BE5C4E929741860009FF98E /* APIHelper.swift */,
+				0BE5C4EA29741860009FF98E /* AlamofireImplementations.swift */,
+				0BE5C4EB29741860009FF98E /* JSONValue.swift */,
+				0BE5C4EC29741860009FF98E /* APIs */,
+				0BE5C4F129741860009FF98E /* CodableHelper.swift */,
+				0BE5C4F229741860009FF98E /* JSONEncodableEncoding.swift */,
+				0BE5C4F329741860009FF98E /* APIs.swift */,
+				0BE5C4F429741860009FF98E /* Models */,
+				0BE5C50429741860009FF98E /* Extensions.swift */,
+				0BE5C50529741860009FF98E /* JSONEncodingHelper.swift */,
+				0BE5C50629741860009FF98E /* Models.swift */,
+				0BE5C50729741860009FF98E /* Configuration.swift */,
+			);
+			path = Swaggers;
+			sourceTree = "<group>";
+		};
+		0BE5C4EC29741860009FF98E /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				0BE5C4ED29741860009FF98E /* EnvironmentAPI.swift */,
+				0BE5C4EE29741860009FF98E /* ZonesAPI.swift */,
+				0BE5C4EF29741860009FF98E /* ZWaveAPI.swift */,
+				0BE5C4F029741860009FF98E /* DeviceAPI.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		0BE5C4F429741860009FF98E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0BE5C4F529741860009FF98E /* Forecast.swift */,
+				0BE5C4F629741860009FF98E /* TemperatureZone.swift */,
+				0BE5C4F729741860009FF98E /* DeviceState.swift */,
+				0BE5C4F829741860009FF98E /* TemperatureSummary.swift */,
+				0BE5C4F929741860009FF98E /* City.swift */,
+				0BE5C4FA29741860009FF98E /* LightingZone.swift */,
+				0BE5C4FB29741860009FF98E /* HeaterState.swift */,
+				0BE5C4FC29741860009FF98E /* ForecastTemperature.swift */,
+				0BE5C4FD29741860009FF98E /* ForecastResponse.swift */,
+				0BE5C4FE29741860009FF98E /* LightingSummary.swift */,
+				0BE5C4FF29741860009FF98E /* ApiResponse.swift */,
+				0BE5C50029741860009FF98E /* TemperatueZoneStatus.swift */,
+				0BE5C50129741860009FF98E /* DeviceRegistrationInfo.swift */,
+				0BE5C50229741860009FF98E /* WeatherForecast.swift */,
+				0BE5C50329741860009FF98E /* LightingZoneStatus.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0BDFB16D296E2EF700A98698 /* Swagger-code-gen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BDFB193296E2EFB00A98698 /* Build configuration list for PBXNativeTarget "Swagger-code-gen" */;
+			buildPhases = (
+				0BDFB16A296E2EF700A98698 /* Sources */,
+				0BDFB16B296E2EF700A98698 /* Frameworks */,
+				0BDFB16C296E2EF700A98698 /* Resources */,
+				0BE5C56029756A28009FF98E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Swagger-code-gen";
+			packageProductDependencies = (
+				0BDFB1C52971FF6800A98698 /* Alamofire */,
+			);
+			productName = "Swagger-code-gen";
+			productReference = 0BDFB16E296E2EF700A98698 /* Swagger-code-gen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0BDFB17E296E2EFB00A98698 /* Swagger-code-genTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BDFB196296E2EFB00A98698 /* Build configuration list for PBXNativeTarget "Swagger-code-genTests" */;
+			buildPhases = (
+				0BDFB17B296E2EFB00A98698 /* Sources */,
+				0BDFB17C296E2EFB00A98698 /* Frameworks */,
+				0BDFB17D296E2EFB00A98698 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BDFB181296E2EFB00A98698 /* PBXTargetDependency */,
+			);
+			name = "Swagger-code-genTests";
+			productName = "Swagger-code-genTests";
+			productReference = 0BDFB17F296E2EFB00A98698 /* Swagger-code-genTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0BDFB188296E2EFB00A98698 /* Swagger-code-genUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BDFB199296E2EFB00A98698 /* Build configuration list for PBXNativeTarget "Swagger-code-genUITests" */;
+			buildPhases = (
+				0BDFB185296E2EFB00A98698 /* Sources */,
+				0BDFB186296E2EFB00A98698 /* Frameworks */,
+				0BDFB187296E2EFB00A98698 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BDFB18B296E2EFB00A98698 /* PBXTargetDependency */,
+			);
+			name = "Swagger-code-genUITests";
+			productName = "Swagger-code-genUITests";
+			productReference = 0BDFB189296E2EFB00A98698 /* Swagger-code-genUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0BDFB166296E2EF700A98698 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					0BDFB16D296E2EF700A98698 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					0BDFB17E296E2EFB00A98698 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 0BDFB16D296E2EF700A98698;
+					};
+					0BDFB188296E2EFB00A98698 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 0BDFB16D296E2EF700A98698;
+					};
+				};
+			};
+			buildConfigurationList = 0BDFB169296E2EF700A98698 /* Build configuration list for PBXProject "Swagger-code-gen" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0BDFB165296E2EF700A98698;
+			packageReferences = (
+				0BDFB1C42971FF6800A98698 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 0BDFB16F296E2EF700A98698 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0BDFB16D296E2EF700A98698 /* Swagger-code-gen */,
+				0BDFB17E296E2EFB00A98698 /* Swagger-code-genTests */,
+				0BDFB188296E2EFB00A98698 /* Swagger-code-genUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0BDFB16C296E2EF700A98698 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BE5C50929741860009FF98E /* Cartfile in Resources */,
+				0BE5C50D29741860009FF98E /* VERSION in Resources */,
+				0BE5C50829741860009FF98E /* .swagger-codegen-ignore in Resources */,
+				0BE5C50A29741860009FF98E /* SwaggerClient.podspec in Resources */,
+				0BE5C50B29741860009FF98E /* git_push.sh in Resources */,
+				0BDFB17A296E2EFA00A98698 /* Preview Assets.xcassets in Resources */,
+				0BE5C50C29741860009FF98E /* .gitignore in Resources */,
+				0BDFB176296E2EFA00A98698 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BDFB17D296E2EFB00A98698 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BDFB187296E2EFB00A98698 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BDFB16A296E2EF700A98698 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BE5C52229741860009FF98E /* ApiResponse.swift in Sources */,
+				0BE5C51C29741860009FF98E /* City.swift in Sources */,
+				0BE5C51D29741860009FF98E /* LightingZone.swift in Sources */,
+				0BE5C51329741860009FF98E /* ZWaveAPI.swift in Sources */,
+				0BDFB174296E2EF700A98698 /* ContentView.swift in Sources */,
+				0BE5C52729741860009FF98E /* Extensions.swift in Sources */,
+				0BE5C51F29741860009FF98E /* ForecastTemperature.swift in Sources */,
+				0BE5C51529741860009FF98E /* CodableHelper.swift in Sources */,
+				0BE5C52829741860009FF98E /* JSONEncodingHelper.swift in Sources */,
+				0BE5C50F29741860009FF98E /* AlamofireImplementations.swift in Sources */,
+				0BE5C51029741860009FF98E /* JSONValue.swift in Sources */,
+				0BE5C52629741860009FF98E /* LightingZoneStatus.swift in Sources */,
+				0BE5C52929741860009FF98E /* Models.swift in Sources */,
+				0BE5C52029741860009FF98E /* ForecastResponse.swift in Sources */,
+				0BE5C51629741860009FF98E /* JSONEncodableEncoding.swift in Sources */,
+				0BE5C51829741860009FF98E /* Forecast.swift in Sources */,
+				0BDFB172296E2EF700A98698 /* Swagger_code_genApp.swift in Sources */,
+				0BE5C52129741860009FF98E /* LightingSummary.swift in Sources */,
+				0BE5C51A29741860009FF98E /* DeviceState.swift in Sources */,
+				0BE5C50E29741860009FF98E /* APIHelper.swift in Sources */,
+				0BE5C51729741860009FF98E /* APIs.swift in Sources */,
+				0BE5C51929741860009FF98E /* TemperatureZone.swift in Sources */,
+				0BE5C51429741860009FF98E /* DeviceAPI.swift in Sources */,
+				0BE5C52529741860009FF98E /* WeatherForecast.swift in Sources */,
+				0BE5C51B29741860009FF98E /* TemperatureSummary.swift in Sources */,
+				0BE5C51E29741860009FF98E /* HeaterState.swift in Sources */,
+				0BE5C51129741860009FF98E /* EnvironmentAPI.swift in Sources */,
+				0BE5C51229741860009FF98E /* ZonesAPI.swift in Sources */,
+				0BE5C52329741860009FF98E /* TemperatueZoneStatus.swift in Sources */,
+				0BE5C52429741860009FF98E /* DeviceRegistrationInfo.swift in Sources */,
+				0BE5C52A29741860009FF98E /* Configuration.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BDFB17B296E2EFB00A98698 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BDFB184296E2EFB00A98698 /* Swagger_code_genTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BDFB185296E2EFB00A98698 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BDFB18E296E2EFB00A98698 /* Swagger_code_genUITests.swift in Sources */,
+				0BDFB190296E2EFB00A98698 /* Swagger_code_genUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0BDFB181296E2EFB00A98698 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BDFB16D296E2EF700A98698 /* Swagger-code-gen */;
+			targetProxy = 0BDFB180296E2EFB00A98698 /* PBXContainerItemProxy */;
+		};
+		0BDFB18B296E2EFB00A98698 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BDFB16D296E2EF700A98698 /* Swagger-code-gen */;
+			targetProxy = 0BDFB18A296E2EFB00A98698 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0BDFB191296E2EFB00A98698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					"armv7,",
+					"armv7s,",
+					"arm64,",
+					"arm64e,",
+					x86_64,
+					"$(ARCHS_STANDARD)",
+				);
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0BDFB192296E2EFB00A98698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					"armv7,",
+					"armv7s,",
+					"arm64,",
+					"arm64e,",
+					x86_64,
+					"$(ARCHS_STANDARD)",
+				);
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		0BDFB194296E2EFB00A98698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Swagger-code-gen/Swagger_code_gen.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Swagger-code-gen/Preview Content\"";
+				DEVELOPMENT_TEAM = 4TA2VG2G3H;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Swagger-code-gen",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "PS-Demo.Swagger-code-gen1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0BDFB195296E2EFB00A98698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Swagger-code-gen/Swagger_code_gen.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Swagger-code-gen/Preview Content\"";
+				DEVELOPMENT_TEAM = 4TA2VG2G3H;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Swagger-code-gen",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "PS-Demo.Swagger-code-gen1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0BDFB197296E2EFB00A98698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BY8A7G38H4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "PS-Demo.Swagger-code-genTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swagger-code-gen.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Swagger-code-gen";
+			};
+			name = Debug;
+		};
+		0BDFB198296E2EFB00A98698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BY8A7G38H4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "PS-Demo.Swagger-code-genTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swagger-code-gen.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Swagger-code-gen";
+			};
+			name = Release;
+		};
+		0BDFB19A296E2EFB00A98698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BY8A7G38H4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "PS-Demo.Swagger-code-genUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Swagger-code-gen";
+			};
+			name = Debug;
+		};
+		0BDFB19B296E2EFB00A98698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BY8A7G38H4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "PS-Demo.Swagger-code-genUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Swagger-code-gen";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0BDFB169296E2EF700A98698 /* Build configuration list for PBXProject "Swagger-code-gen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BDFB191296E2EFB00A98698 /* Debug */,
+				0BDFB192296E2EFB00A98698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BDFB193296E2EFB00A98698 /* Build configuration list for PBXNativeTarget "Swagger-code-gen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BDFB194296E2EFB00A98698 /* Debug */,
+				0BDFB195296E2EFB00A98698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BDFB196296E2EFB00A98698 /* Build configuration list for PBXNativeTarget "Swagger-code-genTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BDFB197296E2EFB00A98698 /* Debug */,
+				0BDFB198296E2EFB00A98698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BDFB199296E2EFB00A98698 /* Build configuration list for PBXNativeTarget "Swagger-code-genUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BDFB19A296E2EFB00A98698 /* Debug */,
+				0BDFB19B296E2EFB00A98698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0BDFB1C42971FF6800A98698 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0BDFB1C52971FF6800A98698 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BDFB1C42971FF6800A98698 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0BDFB166296E2EF700A98698 /* Project object */;
+}

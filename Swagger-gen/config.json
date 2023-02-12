@@ -1,0 +1,19 @@
+{
+    "lang": "swift5",
+    "codegenVersion": "4.3.1",
+    "packageName": "PSCodeGenPackages",
+    "apiPackage": "API",
+    "modelPackage": "Model",
+    "sourceFolder": "Sources",
+    "modelNamePrefix": "",
+    "modelNameSuffix": "Model",
+    "sortParamsByRequiredFlag": true,
+    "hideGenerationTimestamp": true,
+    "useDateTimeOffset": true,
+    "dateLibrary": "default",
+    "additionalProperties": {
+        "projectName": "Swagger-code-gen"
+    },
+    "inputSpec": "path/to/api.json",
+    "outputDir": "path/to/output"
+}
